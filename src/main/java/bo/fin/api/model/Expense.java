@@ -1,20 +1,37 @@
 package bo.fin.api.model;
 
-public class Expense {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
+
+// @Entity
+//@Table(name="TB_EXPENSE")
+public class Expense {
     public Expense() {
     }
     public Expense(Integer id, String firstName, String lastName, String email) {
-        super();
+        super();   
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
     }
 
+    //@Id	
+    //@GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
+    
+    //@NotNull
     private String firstName;
+    
+   // @NotNull
     private String lastName;
+    
+    //@NotNull
     private String email;
 
     public Integer getId() {
