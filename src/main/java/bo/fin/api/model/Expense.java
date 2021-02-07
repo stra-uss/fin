@@ -1,10 +1,10 @@
 package bo.fin.api.model;
 
-public class Employee {
+public class Expense {
 
-    public Employee() {
+    public Expense() {
     }
-    public Employee(Integer id, String firstName, String lastName, String email) {
+    public Expense(Integer id, String firstName, String lastName, String email) {
         super();
         this.id = id;
         this.firstName = firstName;

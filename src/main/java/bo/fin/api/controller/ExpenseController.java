@@ -4,15 +4,15 @@ import java.util.List;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import bo.fin.api.model.Employee;
+import bo.fin.api.model.Expense;
 
 @RestController
-public class EmployeeController {
+public class ExpenseController {
     @RequestMapping("/")
-    public List<Employee> getEmployees()
+    public List<Expense> getEmployees()
     {
-        List<Employee> employeesList = new ArrayList<Employee>();
-        employeesList.add(new Employee(1,"Breno","Strauss","breno_strauss@gmail.com"));
+        List<Expense> employeesList = new ArrayList<Expense>();
+        employeesList.add(new Expense(1,"Breno","Strauss","breno_strauss@gmail.com"));
         return employeesList;
     }
 
